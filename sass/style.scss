@@ -2,3 +2,7 @@
 @use "mixins" as m;
 @use "reset";
 @use "variables" as v;
+
+.page {
+    background: orangered;
+}
