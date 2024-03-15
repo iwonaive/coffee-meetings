@@ -133,6 +133,26 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgb(249, 248, 243);
+}
+
 .page {
-  background: orangered;
+  max-width: 1140px;
+  align-items: flex-start;
+}
+
+.hero {
+  display: flex;
+}
+.heroimg {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
