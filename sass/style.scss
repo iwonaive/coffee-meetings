@@ -3,6 +3,33 @@
 @use "reset";
 @use "variables" as v;
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba(249, 248, 243, 1);
+
+}
+
 .page {
-    background: orangered;
+  max-width: 1140px;
+//   display: flex
+  ;
+//   width: calc(100% - 1rem);
+//  padding: 0px 40px;
+//  margin: 0 auto;
+// flex-direction: column;
+align-items: flex-start;
+}
+
+.hero {
+    display: flex;
+    &img {
+        display: flex;
+    }
 }
