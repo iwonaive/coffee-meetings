@@ -195,4 +195,40 @@ body {
 }
 .details__container__text {
   font-size: 22px;
+}
+
+.receiver {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1360px;
+  background-color: rgb(188, 230, 173);
+}
+.receiver__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.receiver__container__img {
+  width: 702px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.receiver__container__info {
+  width: 554px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 160px 48px 0px 48px;
+}
+.receiver__container__heading {
+  font-size: 58px;
+  padding-top: 160px;
+}
+.receiver__container__text {
+  font-size: 22px;
+  align-items: flex-start;
+}
+
+.btn {
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
