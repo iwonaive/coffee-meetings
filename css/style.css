@@ -151,12 +151,13 @@ body {
   flex-wrap: wrap;
   width: calc(100% - 1rem);
   background-color: lightcoral;
-  flex-direction: column;
+  display: block;
 }
 
 .nav {
   width: 100%;
   display: flex;
+  position: fixed;
 }
 
 .main {
@@ -215,9 +216,6 @@ body {
 .receiver__container__info {
   width: 554px;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   padding: 160px 48px 0px 48px;
 }
 .receiver__container__heading {
@@ -244,7 +242,7 @@ body {
   flex-wrap: wrap;
 }
 .about__container__img {
-  width: 702px;
+  width: 700px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -286,7 +284,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 160px 48px 0px 48px;
+  padding: 0px 48px 0px;
 }
 .contact__container__heading {
   font-size: 58px;
