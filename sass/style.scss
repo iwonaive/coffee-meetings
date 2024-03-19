@@ -207,3 +207,14 @@ body {
     font-size: 58px;
   }
 }
+
+.btn:hover {
+  rotate: 45deg;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.btn-main {
+  display: block;
+  margin: 0 auto;
+}
