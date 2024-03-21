@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: rgb(243, 223, 126);
+  background: v.$magnolia;
 }
 
 .page {
@@ -23,6 +23,8 @@ body {
   background-color: lightcoral;
   //   flex-direction: ;
   display: block;
+   font-family: v.$font-primary;
+  
 }
 
 .nav {
@@ -45,7 +47,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
   width: 1360px;
-  background-color: lightblue;
+  background-color: rgb(194, 179, 181);
+ 
+ 
 
   &__container {
     display: flex;
@@ -56,18 +60,24 @@ body {
     width: 785px;
   }
   &__container__info {
-    width: 554px;
-    text-align: center;
+    // width: 554px;
+    align-items: flex-start;
+     padding: 160px 48px 0px 48px;
   }
   &__container__heading {
     font-size: 58px;
-    padding-top: 160px;
+    // padding-top: 160px;
+    color: v.$green;
+    font-weight: 500;
+    padding-bottom: 40px;
   }
   &__container__subheader {
     font-size: 36px;
   }
   &__container__text {
     font-size: 22px;
+    line-height: 130%;
+    padding-bottom: 8px;
   }
 }
 
@@ -148,7 +158,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 1360px;
-  background-color: rgba(38, 118, 81, 1);
+  background: v.$green;
 
   &__container {
     display: flex;
@@ -209,7 +219,7 @@ body {
 }
 
 .btn:hover {
-  rotate: 45deg;
+  rotate: 180deg;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
