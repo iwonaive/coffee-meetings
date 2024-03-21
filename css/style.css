@@ -151,7 +151,7 @@ body {
 }
 
 .page {
-  max-width: 1140px;
+  max-width: 1440px;
   display: flex;
   flex-wrap: wrap;
   width: calc(100% - 1rem);
@@ -172,15 +172,12 @@ body {
   background-position: center;
   background-color: pink;
   height: 730px;
-  width: 1360px;
+  width: 1440px;
 }
 
 .details {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  width: 1360px;
-  background-color: rgb(194, 179, 181);
 }
 .details__container {
   display: flex;
@@ -201,17 +198,20 @@ body {
 }
 .details__container__subheader {
   font-size: 36px;
+  line-height: 110%;
 }
 .details__container__text {
   font-size: 22px;
   line-height: 130%;
-  padding-bottom: 8px;
+  padding-bottom: 32px;
+}
+.details__container__link {
+  padding-top: 8px;
 }
 
 .receiver {
   display: flex;
   flex-wrap: wrap;
-  width: 1360px;
   background-color: rgb(188, 230, 173);
 }
 .receiver__container {
@@ -219,32 +219,35 @@ body {
   flex-wrap: wrap;
 }
 .receiver__container__img {
-  width: 702px;
+  width: 782px;
   display: flex;
   flex-wrap: wrap;
 }
 .receiver__container__info {
   width: 554px;
-  text-align: center;
+  align-items: flex-start;
   padding: 160px 48px 0px 48px;
 }
 .receiver__container__heading {
   font-size: 58px;
-  padding-top: 160px;
+  color: rgb(38, 118, 81);
+  padding-bottom: 40px;
+  font-weight: 500;
 }
 .receiver__container__text {
   font-size: 22px;
   align-items: flex-start;
+  padding-bottom: 70px;
 }
 
 .btn {
-  align-items: center;
+  margin: 0 auto;
+  display: block;
 }
 
 .about {
   display: flex;
   flex-wrap: wrap;
-  width: 1360px;
   background-color: rgb(159, 158, 158);
 }
 .about__container {
@@ -252,13 +255,13 @@ body {
   flex-wrap: wrap;
 }
 .about__container__img {
-  width: 700px;
+  width: 785px;
   display: flex;
   flex-wrap: wrap;
 }
 .about__container__info {
   width: 554px;
-  text-align: center;
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -266,7 +269,9 @@ body {
 }
 .about__container__heading {
   font-size: 58px;
-  padding-top: 160px;
+  padding-bottom: 40px;
+  color: rgb(38, 118, 81);
+  font-weight: 500;
 }
 .about__container__text {
   font-size: 22px;
@@ -276,7 +281,6 @@ body {
 .contact {
   display: flex;
   flex-wrap: wrap;
-  width: 1360px;
   background: rgb(38, 118, 81);
 }
 .contact__container {
@@ -308,7 +312,6 @@ body {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  width: 1360px;
   background-color: rgb(175, 234, 207);
 }
 .footer__container {
