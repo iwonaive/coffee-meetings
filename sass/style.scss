@@ -31,6 +31,12 @@ body {
   display: flex;
   position: fixed;
 }
+.menu {
+  width: 56px;
+  // display: flex;
+  padding: 16px 12px;
+  cursor: pointer;
+}
 
 .main {
   background-image: url("/img/hero.png");
@@ -215,30 +221,49 @@ body {
     flex-wrap: wrap;
   }
 
-  &__container__img {
-    height: 300px;
+  // &__container__img {
+  //   height: 300px;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+
+  &__container__thumbs {
     display: flex;
     flex-wrap: wrap;
   }
 
-  &__container__heading {
+  &__container__img {
+    height: 300px;
+  }
+  &__container__img:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+
+  &__container__info {
     font-size: 22px;
     padding-top: 200px;
-    flex-wrap: wrap;
-    flex-direction: column;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+    display: flex;
+    // align-items: flex-end;
+    flex-direction: row;
   }
   &__container__text {
     font-size: 58px;
+    display: flex;
+    // align-items: flex-end;
+    // flex-direction: row;
   }
-}
 
-.btn:hover {
-  rotate: 180deg;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
+  .btn:hover {
+    rotate: 180deg;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
 
-.btn-main {
-  display: block;
-  margin: 0 auto;
+  .btn-main {
+    display: block;
+    margin: 0 auto;
+  }
 }

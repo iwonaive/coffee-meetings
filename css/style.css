@@ -166,6 +166,12 @@ body {
   position: fixed;
 }
 
+.menu {
+  width: 56px;
+  padding: 16px 12px;
+  cursor: pointer;
+}
+
 .main {
   background-image: url("/img/hero.png");
   background-repeat: no-repeat;
@@ -331,28 +337,33 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.footer__container__img {
-  height: 300px;
+.footer__container__thumbs {
   display: flex;
   flex-wrap: wrap;
 }
-.footer__container__heading {
+.footer__container__img {
+  height: 300px;
+}
+.footer__container__img:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.footer__container__info {
   font-size: 22px;
   padding-top: 200px;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
 }
 .footer__container__text {
   font-size: 58px;
+  display: flex;
 }
-
-.btn:hover {
+.footer .btn:hover {
   rotate: 180deg;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
-
-.btn-main {
+.footer .btn-main {
   display: block;
   margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
