@@ -313,6 +313,10 @@ body {
 .contact__container__img:hover {
   background-image: url(../img/eye.gif);
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 472px;
+  width: 652px;
 }
 .contact__container__info {
   width: 550px;
