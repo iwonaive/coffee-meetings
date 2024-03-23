@@ -166,12 +166,6 @@ body {
   position: fixed;
 }
 
-.menu {
-  width: 56px;
-  padding: 16px 12px;
-  cursor: pointer;
-}
-
 .main {
   background-image: url("/img/hero.png");
   background-repeat: no-repeat;
