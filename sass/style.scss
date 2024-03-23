@@ -21,7 +21,6 @@ body {
   flex-wrap: wrap;
   width: calc(100% - 1rem);
   background-color: lightcoral;
-  //   flex-direction: ;
   display: block;
   font-family: v.$font-primary;
 }
@@ -31,12 +30,11 @@ body {
   display: flex;
   position: fixed;
 }
-.menu {
-  width: 56px;
-  // display: flex;
-  padding: 16px 12px;
-  cursor: pointer;
-}
+// .menu {
+//   width: 56px;
+//   padding: 16px 12px;
+//   cursor: pointer;
+// }
 
 .main {
   background-image: url("/img/hero.png");
@@ -50,9 +48,6 @@ body {
 .details {
   display: flex;
   flex-wrap: wrap;
-  // align-items: center;
-  // width: 1360px;
-  // background-color: rgb(194, 179, 181);
 
   &__container {
     display: flex;
@@ -63,13 +58,11 @@ body {
     width: 785px;
   }
   &__container__info {
-    // width: 554px;
     align-items: flex-start;
     padding: 160px 48px 0px 48px;
   }
   &__container__heading {
     font-size: 58px;
-    // padding-top: 160px;
     color: v.$green;
     font-weight: 500;
     padding-bottom: 40px;
@@ -91,7 +84,6 @@ body {
 .receiver {
   display: flex;
   flex-wrap: wrap;
-  //   align-items: center;
   background-color: rgb(188, 230, 173);
 
   &__container {
@@ -127,12 +119,15 @@ body {
   margin: 0 auto;
   display: block;
 }
+.btn:hover {
+  rotate: 180deg;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
 
 .about {
   display: flex;
   flex-wrap: wrap;
-  //   align-items: center;
-  // width: 1360px;
   background-color: rgb(159, 158, 158);
 
   &__container {
@@ -180,8 +175,20 @@ body {
 
   &__container__img {
     height: 472px;
+    width: 652px;
     display: flex;
     flex-wrap: wrap;
+    background-image: url(../img/eye.png);
+    background-size: cover;
+    margin: 30px;
+  }
+  &__container__img:hover {
+    background-image: url(../img/eye.gif);
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 472px;
+    width: 652px;
   }
   &__container__info {
     width: 550px;
@@ -243,10 +250,7 @@ body {
   &__container__info {
     font-size: 22px;
     padding-top: 200px;
-    // flex-wrap: wrap;
-    // flex-direction: column;
     display: flex;
-    // align-items: flex-end;
     flex-direction: row;
   }
   &__container__text {
@@ -254,16 +258,5 @@ body {
     display: flex;
     // align-items: flex-end;
     // flex-direction: row;
-  }
-
-  .btn:hover {
-    rotate: 180deg;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-  }
-
-  .btn-main {
-    display: block;
-    margin: 0 auto;
   }
 }

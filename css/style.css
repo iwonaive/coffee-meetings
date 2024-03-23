@@ -166,12 +166,6 @@ body {
   position: fixed;
 }
 
-.menu {
-  width: 56px;
-  padding: 16px 12px;
-  cursor: pointer;
-}
-
 .main {
   background-image: url("/img/hero.png");
   background-repeat: no-repeat;
@@ -252,6 +246,12 @@ body {
   display: block;
 }
 
+.btn:hover {
+  rotate: 180deg;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -298,8 +298,20 @@ body {
 }
 .contact__container__img {
   height: 472px;
+  width: 652px;
   display: flex;
   flex-wrap: wrap;
+  background-image: url(../img/eye.png);
+  background-size: cover;
+  margin: 30px;
+}
+.contact__container__img:hover {
+  background-image: url(../img/eye.gif);
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 472px;
+  width: 652px;
 }
 .contact__container__info {
   width: 550px;
@@ -357,13 +369,4 @@ body {
 .footer__container__text {
   font-size: 58px;
   display: flex;
-}
-.footer .btn:hover {
-  rotate: 180deg;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
-.footer .btn-main {
-  display: block;
-  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
