@@ -127,6 +127,11 @@ body {
   margin: 0 auto;
   display: block;
 }
+  .btn:hover {
+    rotate: 180deg;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
 
 .about {
   display: flex;
@@ -179,9 +184,20 @@ body {
   }
 
   &__container__img {
+    // height: 472px;
     height: 472px;
+    width: 652px;
     display: flex;
     flex-wrap: wrap;
+    background-image: url(../img/eye.png);
+    background-size: cover;
+    
+  }
+  &__container__img:hover {
+    background-image: url(../img/eye.gif);
+    background-size: contain;
+  
+    
   }
   &__container__info {
     width: 550px;
@@ -256,14 +272,14 @@ body {
     // flex-direction: row;
   }
 
-  .btn:hover {
-    rotate: 180deg;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-  }
+  // .btn:hover {
+  //   rotate: 180deg;
+  //   cursor: pointer;
+  //   transition: 0.5s ease-in-out;
+  // }
 
-  .btn-main {
-    display: block;
-    margin: 0 auto;
-  }
+  // .btn-main {
+  //   display: block;
+  //   margin: 0 auto;
+  // }
 }
