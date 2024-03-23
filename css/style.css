@@ -309,10 +309,11 @@ body {
   flex-wrap: wrap;
   background-image: url(../img/eye.png);
   background-size: cover;
+  margin: 30px;
 }
 .contact__container__img:hover {
   background-image: url(../img/eye.gif);
-  background-size: contain;
+  background-size: 85%;
   background-position: center;
   background-repeat: no-repeat;
   height: 472px;
