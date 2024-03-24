@@ -41,8 +41,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: pink;
-  height: 730px;
-  width: 1440px;
+  height: 45.5rem;
+  width: 90rem;
+
+  &__container__gif {
+    padding-top: 30rem;
+    padding-left: 42rem;
+    // może dać tutaj kompromis i zostawić kubek kawy cały czas ruszający się? 
+  }
 }
 
 .details {
@@ -55,29 +61,29 @@ body {
   }
 
   &__container__img {
-    width: 785px;
+    width: 49rem;
   }
   &__container__info {
     align-items: flex-start;
-    padding: 160px 48px 0px 48px;
+    padding: 10rem 3rem 0 3rem;
   }
   &__container__heading {
-    font-size: 58px;
+    font-size: 3.75rem;
     color: v.$green;
     font-weight: 500;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
   }
   &__container__subheader {
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 110%;
   }
   &__container__text {
-    font-size: 22px;
+    font-size: 1.5rem;
     line-height: 130%;
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
   }
   &__container__link {
-    padding-top: 8px;
+    padding-top: 0.5rem;
   }
 }
 
@@ -92,25 +98,25 @@ body {
   }
 
   &__container__img {
-    width: 782px;
+    width: 48.75rem;
     display: flex;
     flex-wrap: wrap;
   }
   &__container__info {
-    width: 554px;
+    width: 34.5rem;
     align-items: flex-start;
-    padding: 160px 48px 0px 48px;
+    padding: 10rem 3rem 0 3rem;
   }
   &__container__heading {
-    font-size: 58px;
+    font-size: 3.75rem;
     color: v.$green;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
     font-weight: 500;
   }
   &__container__text {
-    font-size: 22px;
+    font-size: 1.25rem;
     align-items: flex-start;
-    padding-bottom: 70px;
+    padding-bottom: 4.25rem;
     line-height: 130%;
   }
 }
@@ -136,27 +142,27 @@ body {
   }
 
   &__container__img {
-    width: 785px;
+    width: 49rem;
     display: flex;
     flex-wrap: wrap;
   }
   &__container__info {
-    width: 550px;
+    width: 28.5rem;
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 160px 48px 0px 48px;
+    padding: 10rem 3rem 0 3rem;
   }
   &__container__heading {
-    font-size: 58px;
-    padding-bottom: 40px;
+    font-size: 3.5rem;
+    padding-bottom: 2.5rem;
     color: v.$green;
     font-weight: 500;
   }
 
   &__container__text {
-    font-size: 22px;
+    font-size: 1.5rem;
     align-items: flex-start;
     line-height: 130%;
   }
@@ -166,7 +172,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   background: v.$green;
-  padding: 96px 40px;
+  padding: 6rem 2.5rem;
 
   &__container {
     display: flex;
@@ -174,25 +180,25 @@ body {
   }
 
   &__container__img {
-    height: 472px;
-    width: 652px;
+    height: 29.5rem;
+    width: 40.75rem;
     display: flex;
     flex-wrap: wrap;
     background-image: url(../img/eye.png);
     background-size: cover;
-    margin: 30px;
+    margin: 2rem;
   }
   &__container__img:hover {
+    height: 29.5rem;
+    width: 40.75rem;
     background-image: url(../img/eye.gif);
     background-size: 85%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 472px;
-    width: 652px;
   }
   &__container__info {
-    width: 550px;
-    padding: 40px 40px 0px 40px;
+    width: 34.25rem;
+    padding: 2.5rem 2.5rem 0px 2.5rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -200,18 +206,18 @@ body {
     color: v.$magnolia;
   }
   &__container__heading {
-    font-size: 58px;
-    padding-bottom: 80px;
+    font-size: 3.5rem;
+    padding-bottom: 5rem;
   }
   &__container__text {
-    font-size: 22px;
+    font-size: 1.5rem;
     align-items: flex-start;
   }
   .span {
     font-weight: 500;
   }
   .phone {
-    padding: 24px 0;
+    padding: 1.5rem 0;
   }
   .email {
     color: v.$magnolia;
@@ -228,35 +234,55 @@ body {
     flex-wrap: wrap;
   }
 
-  // &__container__img {
-  //   height: 300px;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
-
   &__container__thumbs {
     display: flex;
     flex-wrap: wrap;
   }
 
-  &__container__img {
-    height: 300px;
+  &__container__img--cloud {
+    height: 23.25rem;
+    margin-top: 4rem;
   }
-  &__container__img:hover {
+  &__container__img--triangle {
+    height: 24.5rem;
+    margin: 16.5rem 0 0 -6.25rem;
+  }
+  &__container__img--sun {
+    height: 23.25rem;
+    margin: 8rem 0 0 -9.25rem;
+  }
+  &__container__img--bbc {
+    height: 21.25rem;
+    margin-top: 2.5rem;
+  }
+
+  &__container__img--triangle:hover,
+  &__container__img--bbc:hover {
     cursor: pointer;
     transform: scale(1.3);
+    transition: 0.5s ease-in-out;
+  }
+  &__container__img--cloud:hover,
+  &__container__img--sun:hover {
+    cursor: pointer;
+    rotate: 25deg;
+    transition: 0.5s ease-in-out;
   }
 
   &__container__info {
-    font-size: 22px;
-    padding-top: 200px;
     display: flex;
-    flex-direction: row;
+    padding-bottom: 2rem;
+    width: 100%;
+    flex-direction: row-reverse;
   }
   &__container__text {
-    font-size: 58px;
+    font-size: 1.25rem;
     display: flex;
-    // align-items: flex-end;
-    // flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__container__heading {
+    font-size: 3.5rem;
   }
 }
