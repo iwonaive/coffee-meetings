@@ -166,6 +166,90 @@ body {
   position: fixed;
 }
 
+html {
+  position: relative;
+}
+
+/*== burger =========*/
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  height: 2rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  margin-left: 80rem;
+}
+
+.burger__line {
+  width: 35px;
+  height: 3px;
+  margin: 3px;
+  background-color: rgb(68, 103, 169);
+  transition: 0.3s;
+}
+
+.burger__line--two {
+  transition: 0s;
+}
+
+.nav-toggle-label.active .burger__line--one {
+  transform: rotate(-45deg) translate(-6px, 7px);
+}
+
+.nav-toggle-label.active .burger__line--two {
+  visibility: hidden;
+}
+
+.nav-toggle-label.active .burger__line--tree {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/*================ Style for "Menu"============*/
+.main-menu__link {
+  text-decoration: none;
+}
+
+.main-menu__link:active,
+.main-menu__link:hover {
+  color: rgb(163, 163, 163);
+}
+
+nav.main-menu.active {
+  width: 100%;
+  transform: scaleX(1);
+  transition: all 0.3s ease;
+}
+
+.nav-toggle-label {
+  display: flex;
+}
+
+.main-menu {
+  position: absolute;
+  text-align: center;
+  background: rgb(68, 103, 169);
+  top: 8rem;
+  left: 0;
+  width: 0;
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s ease;
+  padding: 6rem 0;
+}
+
+.main-menu__link {
+  display: block;
+  color: rgb(249, 248, 243);
+  padding: 1.25rem;
+  font-size: 1.75rem;
+}
+
 .main {
   background-image: url("/img/hero.png");
   background-repeat: no-repeat;
