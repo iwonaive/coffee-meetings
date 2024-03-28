@@ -32,10 +32,6 @@ body {
   position: fixed;
 }
 
-// html {
-//   position: relative;
-// }
-
 // burger 
 .nav-toggle {
   display: none;
@@ -51,7 +47,7 @@ body {
   // tutaj zmiana polozenia burger ikonki
 }
 .burger__line {
-  width: 35px;
+  width: 2.25rem;
   height: 3px;
   margin: 3px;
   background-color: v.$blue;
@@ -69,6 +65,7 @@ body {
 .nav-toggle-label.active .burger__line--tree {
   transform: rotate(45deg) translate(-5px, -7px);
 }
+// zostawiłam takie małe wartości w px, może tak być?
 
 // style dla menu
 
@@ -118,6 +115,7 @@ nav.main-menu.active {
   background-color: pink;
   height: 45.5rem;
   width: 90rem;
+  // kolory sekcji zostawiłam, łatwiej mi się tak pracuje :)
 
   &__container__gif {
     padding-top: 30.5rem;
@@ -280,6 +278,7 @@ nav.main-menu.active {
     background-size: 85%;
     background-position: center;
     background-repeat: no-repeat;
+    // tutaj pewnie ostro nakombinowałam z tym gifem, coś działa ale nie tak jakbym chciała 
   }
   &__container__info {
     width: 34.25rem;

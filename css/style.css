@@ -182,7 +182,7 @@ body {
 }
 
 .burger__line {
-  width: 35px;
+  width: 2.25rem;
   height: 3px;
   margin: 3px;
   background-color: rgb(68, 103, 169);
