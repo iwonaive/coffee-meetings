@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  position: relative;
 }
 
 body {
@@ -31,10 +32,11 @@ body {
   position: fixed;
 }
 
-html {
-  position: relative;
-}
-/*== burger =========*/
+// html {
+//   position: relative;
+// }
+
+// burger 
 .nav-toggle {
   display: none;
 }
@@ -67,12 +69,11 @@ html {
 .nav-toggle-label.active .burger__line--tree {
   transform: rotate(45deg) translate(-5px, -7px);
 }
-/*================ Style for "Menu"============*/
+
+// style dla menu
+
 .main-menu__link {
   text-decoration: none;
-  // color: blue;
-  // padding: 10px;
-  // font-size: 1.2rem;
 }
 
 .main-menu__link:active,
@@ -86,14 +87,6 @@ nav.main-menu.active {
   transition: all 0.3s ease;
 }
 
-// .nav-bar {
-  // height: 50px;
-  // padding: 0;
-  // justify-content: space-between;
-  // align-items: center;
-  // background-color: darkblue;
-  // nie wiem co to
-// }
 .nav-toggle-label {
   display: flex;
 }
@@ -118,12 +111,6 @@ nav.main-menu.active {
   font-size: 1.75rem;
 }
 
-// .menu {
-//   width: 56px;
-//   padding: 16px 12px;
-//   cursor: pointer;
-// }
-
 .main {
   background-image: url("/img/Section_hero1.png");
   background-repeat: no-repeat;
@@ -136,7 +123,17 @@ nav.main-menu.active {
     padding-top: 30.5rem;
     padding-left: 42.5rem;
     // może dać tutaj kompromis i zostawić kubek kawy cały czas ruszający się?
+    // i może tak samo dać z okiem?
   }
+
+&__container__btn {
+  margin: -10rem 0 0 65rem;
+}
+&__container__btn:hover {
+  rotate: 180deg;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
 }
 
 .details {
@@ -300,6 +297,7 @@ nav.main-menu.active {
   &__container__text {
     font-size: 1.5rem;
     align-items: flex-start;
+    }
   }
   .span {
     font-weight: 500;
@@ -310,7 +308,6 @@ nav.main-menu.active {
   .email {
     color: v.$magnolia;
   }
-}
 
 .footer {
   display: flex;

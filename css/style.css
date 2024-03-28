@@ -140,6 +140,7 @@ table {
 
 html {
   scroll-behavior: smooth;
+  position: relative;
 }
 
 body {
@@ -166,11 +167,6 @@ body {
   position: fixed;
 }
 
-html {
-  position: relative;
-}
-
-/*== burger =========*/
 .nav-toggle {
   display: none;
 }
@@ -209,7 +205,6 @@ html {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
-/*================ Style for "Menu"============*/
 .main-menu__link {
   text-decoration: none;
 }
@@ -261,6 +256,14 @@ nav.main-menu.active {
 .main__container__gif {
   padding-top: 30.5rem;
   padding-left: 42.5rem;
+}
+.main__container__btn {
+  margin: -10rem 0 0 65rem;
+}
+.main__container__btn:hover {
+  rotate: 180deg;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
 .details {
@@ -418,13 +421,16 @@ nav.main-menu.active {
   font-size: 1.5rem;
   align-items: flex-start;
 }
-.contact .span {
+
+.span {
   font-weight: 500;
 }
-.contact .phone {
+
+.phone {
   padding: 1.5rem 0;
 }
-.contact .email {
+
+.email {
   color: rgb(249, 248, 243);
 }
 
