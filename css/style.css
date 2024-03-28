@@ -143,6 +143,46 @@ html {
   position: relative;
 }
 
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(38, 118, 81);
+  z-index: 200;
+  color: rgb(249, 248, 243);
+  text-align: center;
+  line-height: 90vh;
+  font-size: 5rem;
+}
+
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(38, 118, 81);
+  z-index: -10;
+  color: rgb(249, 248, 243);
+  text-align: center;
+  line-height: 90vh;
+  font-size: 5rem;
+  transition: all 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
 body {
   width: 100%;
   display: flex;
@@ -164,7 +204,6 @@ body {
 .nav {
   width: 100%;
   display: flex;
-  position: fixed;
 }
 
 .nav-toggle {
