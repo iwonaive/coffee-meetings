@@ -1,3 +1,10 @@
+const splash = document.querySelector(".splash");
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  setTimeout(() => {
+    splash.classList.add("display-none");
+  }, 3000);
+});
 
 const navToggle = document.querySelector(".nav-toggle");
 const mainMenu = document.querySelector(".main-menu");
