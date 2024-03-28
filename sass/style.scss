@@ -45,7 +45,7 @@ html {
   height: 2rem;
   cursor: pointer;
   margin-top: 1.5rem;
-  margin-left: 80rem;
+  margin-left: 110rem;
   // tutaj zmiana polozenia burger ikonki
 }
 .burger__line {
@@ -125,7 +125,7 @@ nav.main-menu.active {
 // }
 
 .main {
-  background-image: url("/img/hero.png");
+  background-image: url("/img/Section_hero1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: pink;
@@ -133,8 +133,8 @@ nav.main-menu.active {
   width: 90rem;
 
   &__container__gif {
-    padding-top: 30rem;
-    padding-left: 42rem;
+    padding-top: 30.5rem;
+    padding-left: 42.5rem;
     // może dać tutaj kompromis i zostawić kubek kawy cały czas ruszający się?
   }
 }
