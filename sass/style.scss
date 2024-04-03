@@ -35,21 +35,19 @@ html {
   text-align: center;
   line-height: 90vh;
   font-size: 5rem;
-  transition: all .5s; 
+  transition: all 0.5s;
 }
 
 @keyframes fadeIn {
-  to { 
+  to {
     opacity: 1;
   }
 }
 
 .fade-in {
-  opacity: 0; 
+  opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
-
-
 
 body {
   width: 100%;
@@ -72,11 +70,19 @@ body {
 .nav {
   width: 100%;
   display: flex;
-  position: fixed; 
-  // position fixed działa, ale nie wiem jak zrobić, żeby menu działało na całej stronie - jak jestem na górze strony to menu ładnie się wyświetla, ale jak zjadę niżej i kliknę w hamburgera to nic nie mam, bo menu jest na górze 
+  position: fixed;
 }
 
-// burger 
+.nav-logo {
+  padding-top: 1.25rem;
+  margin-left: 10.5rem;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+}
+
+// burger
 .nav-toggle {
   display: none;
 }
@@ -86,8 +92,8 @@ body {
   flex-direction: column;
   height: 2rem;
   cursor: pointer;
-  margin-top: 1.5rem;
-  margin-left: 90rem;
+  margin-top: 1.25rem;
+  margin-left: 99rem;
   // tutaj zmiana polozenia burger ikonki
 }
 .burger__line {
@@ -131,7 +137,7 @@ nav.main-menu.active {
   display: flex;
 }
 .main-menu {
-  position: absolute;
+  position: fixed;
   text-align: center;
   background: v.$blue;
   top: 8rem;
@@ -166,14 +172,14 @@ nav.main-menu.active {
     // i może tak samo dać z okiem?
   }
 
-&__container__btn {
-  margin: -10rem 0 0 65rem;
-}
-&__container__btn:hover {
-  rotate: 180deg;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
+  &__container__btn {
+    margin: -10rem 0 0 65rem;
+  }
+  &__container__btn:hover {
+    rotate: 180deg;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
 }
 
 .details {
@@ -243,6 +249,7 @@ nav.main-menu.active {
     align-items: flex-start;
     padding-bottom: 4.25rem;
     line-height: 130%;
+    width: 28.5rem;
   }
 }
 
@@ -305,21 +312,23 @@ nav.main-menu.active {
   }
 
   &__container__img {
-    height: 29.5rem;
-    width: 40.75rem;
+    height: 20.5rem;
+    // width: 35rem;
     display: flex;
     flex-wrap: wrap;
-    background-image: url(../img/eye.png);
-    background-size: cover;
+    padding-left: 2rem;
+    // background-image: url(../img/eye.png);
+    // background-size: cover;
     margin: 2rem;
-     &:hover{
-         background-image: url(../img/eye.gif);
-    background-size: 85%;
-    background-position: center;
-    background-repeat: no-repeat;
-    }
+    //  &:hover{
+    //      background-image: url(../img/eye.gif);
+    // background-size: 85%;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // }
+    // zagnieżdzenie na wzór jest tutaj :)
   }
-    // tutaj pewnie ostro nakombinowałam z tym gifem, coś działa ale nie tak jakbym chciała 
+  // tutaj pewnie ostro nakombinowałam z tym gifem, coś działa ale nie tak jakbym chciała
   &__container__info {
     width: 34.25rem;
     padding: 2.5rem 2.5rem 0px 2.5rem;
@@ -336,17 +345,17 @@ nav.main-menu.active {
   &__container__text {
     font-size: 1.5rem;
     align-items: flex-start;
-    }
   }
-  .span {
-    font-weight: 500;
-  }
-  .phone {
-    padding: 1.5rem 0;
-  }
-  .email {
-    color: v.$magnolia;
-  }
+}
+.span {
+  font-weight: 500;
+}
+.phone {
+  padding: 1.5rem 0;
+}
+.email {
+  color: v.$magnolia;
+}
 
 .footer {
   display: flex;
