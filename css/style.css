@@ -207,6 +207,15 @@ body {
   position: fixed;
 }
 
+.nav-logo {
+  padding-top: 1.25rem;
+  margin-left: 10.5rem;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+}
+
 .nav-toggle {
   display: none;
 }
@@ -217,8 +226,8 @@ body {
   flex-direction: column;
   height: 2rem;
   cursor: pointer;
-  margin-top: 1.5rem;
-  margin-left: 90rem;
+  margin-top: 1.25rem;
+  margin-left: 99rem;
 }
 
 .burger__line {
@@ -429,9 +438,10 @@ nav.main-menu.active {
   flex-wrap: wrap;
 }
 .contact__container__img {
+  height: 20.5rem;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 1rem;
+  padding-left: 2rem;
   margin: 2rem;
 }
 .contact__container__info {

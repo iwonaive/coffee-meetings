@@ -71,7 +71,15 @@ body {
   width: 100%;
   display: flex;
   position: fixed;
-  // position fixed działa, ale nie wiem jak zrobić, żeby menu działało na całej stronie - jak jestem na górze strony to menu ładnie się wyświetla, ale jak zjadę niżej i kliknę w hamburgera to nic nie mam, bo menu jest na górze
+}
+
+.nav-logo {
+  padding-top: 1.25rem;
+  margin-left: 10.5rem;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100%;
 }
 
 // burger
@@ -84,8 +92,8 @@ body {
   flex-direction: column;
   height: 2rem;
   cursor: pointer;
-  margin-top: 1.5rem;
-  margin-left: 90rem;
+  margin-top: 1.25rem;
+  margin-left: 99rem;
   // tutaj zmiana polozenia burger ikonki
 }
 .burger__line {
@@ -304,11 +312,11 @@ nav.main-menu.active {
   }
 
   &__container__img {
-    // height: 29.5rem;
+    height: 20.5rem;
     // width: 35rem;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 1rem;
+    padding-left: 2rem;
     // background-image: url(../img/eye.png);
     // background-size: cover;
     margin: 2rem;
