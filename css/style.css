@@ -370,6 +370,7 @@ nav.main-menu.active {
   align-items: flex-start;
   padding-bottom: 4.25rem;
   line-height: 130%;
+  width: 28.5rem;
 }
 
 .btn {
@@ -428,19 +429,10 @@ nav.main-menu.active {
   flex-wrap: wrap;
 }
 .contact__container__img {
-  height: 29.5rem;
-  width: 40.75rem;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../img/eye.png);
-  background-size: cover;
+  padding-left: 1rem;
   margin: 2rem;
-}
-.contact__container__img:hover {
-  background-image: url(../img/eye.gif);
-  background-size: 85%;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .contact__container__info {
   width: 34.25rem;

@@ -243,6 +243,7 @@ nav.main-menu.active {
     align-items: flex-start;
     padding-bottom: 4.25rem;
     line-height: 130%;
+    width: 28.5rem; 
   }
 }
 
@@ -305,19 +306,21 @@ nav.main-menu.active {
   }
 
   &__container__img {
-    height: 29.5rem;
-    width: 40.75rem;
+    // height: 29.5rem;
+    // width: 35rem;
     display: flex;
     flex-wrap: wrap;
-    background-image: url(../img/eye.png);
-    background-size: cover;
+    padding-left: 1rem;
+    // background-image: url(../img/eye.png);
+    // background-size: cover;
     margin: 2rem;
-     &:hover{
-         background-image: url(../img/eye.gif);
-    background-size: 85%;
-    background-position: center;
-    background-repeat: no-repeat;
-    }
+    //  &:hover{
+    //      background-image: url(../img/eye.gif);
+    // background-size: 85%;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // }
+    // zagnieżdzenie na wzór jest tutaj :)
   }
     // tutaj pewnie ostro nakombinowałam z tym gifem, coś działa ale nie tak jakbym chciała 
   &__container__info {
