@@ -305,6 +305,7 @@ nav.main-menu.active {
   flex-wrap: wrap;
   background: v.$green;
   padding: 6rem 2.5rem;
+  height: 30rem;
 
   &__container {
     display: flex;
@@ -320,12 +321,12 @@ nav.main-menu.active {
     background-image: url(../img/eye.png);
     background-size: cover;
     margin: 2rem;
-     &:hover{
-         background-image: url(../img/eye.gif);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 4.25rem; 
+    &:hover {
+      background-image: url(../img/eye.gif);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-top: 5.5rem;
     }
     // zagnieżdzenie na wzór jest tutaj :)
   }

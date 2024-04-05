@@ -432,6 +432,7 @@ nav.main-menu.active {
   flex-wrap: wrap;
   background: rgb(38, 118, 81);
   padding: 6rem 2.5rem;
+  height: 30rem;
 }
 .contact__container {
   display: flex;
@@ -452,7 +453,7 @@ nav.main-menu.active {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 4.25rem;
+  padding-top: 5.5rem;
 }
 .contact__container__info {
   width: 34.25rem;
