@@ -313,19 +313,20 @@ nav.main-menu.active {
 
   &__container__img {
     height: 20.5rem;
-    // width: 35rem;
+    width: 35rem;
     display: flex;
     flex-wrap: wrap;
     padding-left: 2rem;
-    // background-image: url(../img/eye.png);
-    // background-size: cover;
+    background-image: url(../img/eye.png);
+    background-size: cover;
     margin: 2rem;
-    //  &:hover{
-    //      background-image: url(../img/eye.gif);
-    // background-size: 85%;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // }
+     &:hover{
+         background-image: url(../img/eye.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 4.25rem; 
+    }
     // zagnieżdzenie na wzór jest tutaj :)
   }
   // tutaj pewnie ostro nakombinowałam z tym gifem, coś działa ale nie tak jakbym chciała

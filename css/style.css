@@ -439,10 +439,20 @@ nav.main-menu.active {
 }
 .contact__container__img {
   height: 20.5rem;
+  width: 35rem;
   display: flex;
   flex-wrap: wrap;
   padding-left: 2rem;
+  background-image: url(../img/eye.png);
+  background-size: cover;
   margin: 2rem;
+}
+.contact__container__img:hover {
+  background-image: url(../img/eye.gif);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 4.25rem;
 }
 .contact__container__info {
   width: 34.25rem;
