@@ -118,7 +118,8 @@ body {
 
 // style dla menu
 
-.main-menu__link {
+.main-menu__link1,
+.main-menu__link2 {
   text-decoration: none;
 }
 
@@ -150,11 +151,34 @@ nav.main-menu.active {
   padding: 6rem 0;
 }
 
-.main-menu__link {
+.main-menu__link1,
+.main-menu__link2 {
   display: block;
   color: v.$magnolia;
   padding: 1.25rem;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
+  width: 30%;
+}
+
+.main-menu__link1 {
+  transform: rotate(10deg);
+  margin-left: 17rem;
+}
+.main-menu__link2 {
+  transform: rotate(-10deg);
+  margin-left: 63rem;
+  // margin-top: -10rem;
+}
+
+.main-menu__img {
+  width: 15rem;
+  height: 21rem;
+  position: relative;
+  margin-top: -2rem;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-image: url("/img/vector.png");
 }
 
 .main {
@@ -305,6 +329,7 @@ nav.main-menu.active {
   flex-wrap: wrap;
   background: v.$green;
   padding: 6rem 2.5rem;
+  height: 30rem;
 
   &__container {
     display: flex;
@@ -313,19 +338,20 @@ nav.main-menu.active {
 
   &__container__img {
     height: 20.5rem;
-    // width: 35rem;
+    width: 35rem;
     display: flex;
     flex-wrap: wrap;
     padding-left: 2rem;
-    // background-image: url(../img/eye.png);
-    // background-size: cover;
+    background-image: url(../img/eye.png);
+    background-size: cover;
     margin: 2rem;
-    //  &:hover{
-    //      background-image: url(../img/eye.gif);
-    // background-size: 85%;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // }
+    &:hover {
+      background-image: url(../img/eye.gif);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-top: 5.5rem;
+    }
     // zagnieżdzenie na wzór jest tutaj :)
   }
   // tutaj pewnie ostro nakombinowałam z tym gifem, coś działa ale nie tak jakbym chciała
