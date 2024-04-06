@@ -289,29 +289,33 @@ nav.main-menu.active {
 }
 
 .main-menu__link1,
-.main-menu__link2 {
-  display: block;
+.main-menu__link2,
+.main-menu__link3 {
   color: rgb(249, 248, 243);
   padding: 1.25rem;
   font-size: 2.5rem;
-  width: 30%;
 }
 
 .main-menu__link1 {
-  transform: rotate(10deg);
-  margin-left: 17rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5rem;
 }
 
 .main-menu__link2 {
-  transform: rotate(-10deg);
-  margin-left: 63rem;
+  display: block;
+  transform: rotate(-11deg);
+}
+
+.main-menu__link3 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .main-menu__img {
-  width: 15rem;
-  height: 21rem;
-  position: relative;
-  margin-top: -2rem;
+  width: 19rem;
+  margin-top: -15rem;
 }
 
 .main {
