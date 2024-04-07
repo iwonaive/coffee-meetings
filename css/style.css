@@ -297,9 +297,8 @@ nav.main-menu.active {
 }
 
 .main-menu__link1 {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 5rem;
+  width: 13%;
+  margin-left: 5rem;
 }
 
 .main-menu__link2 {
@@ -314,8 +313,8 @@ nav.main-menu.active {
 }
 
 .main-menu__img {
-  width: 19rem;
-  margin-top: -15rem;
+  width: 13rem;
+  margin-left: 5rem;
 }
 
 .main {
