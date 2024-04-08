@@ -372,6 +372,15 @@ nav.main-menu.active {
   padding-top: 0.5rem;
 }
 
+.parallax {
+  background-image: url("../img/collage1.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .receiver {
   display: flex;
   flex-wrap: wrap;

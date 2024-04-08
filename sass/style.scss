@@ -267,6 +267,17 @@ nav.main-menu.active {
   }
 }
 
+.parallax {
+  background-image: url('../img/collage1.png');
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+}
+
 .receiver {
   display: flex;
   flex-wrap: wrap;
