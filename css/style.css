@@ -196,7 +196,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: calc(100% - 1rem);
-  background-color: lightcoral;
   display: block;
   font-family: Poppins;
 }
@@ -292,7 +291,7 @@ nav.main-menu.active {
 
 .main-menu__link {
   color: rgb(249, 248, 243);
-  padding: 1.25rem;
+  padding: 1.25rem 3.5rem;
   font-size: 3.5rem;
   line-height: 105%;
 }
@@ -300,14 +299,13 @@ nav.main-menu.active {
 .main-menu__link--fcb {
   color: rgb(249, 248, 243);
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 1.25rem 3.5rem;
 }
 
 .main {
   background-image: url("/img/section_hero.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: pink;
   height: 45.5rem;
   width: 90rem;
 }
@@ -361,7 +359,6 @@ nav.main-menu.active {
 .receiver {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(188, 230, 173);
 }
 .receiver__container {
   display: flex;
@@ -384,7 +381,7 @@ nav.main-menu.active {
   font-weight: 500;
 }
 .receiver__container__text {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   align-items: flex-start;
   padding-bottom: 4.25rem;
   line-height: 130%;
@@ -405,7 +402,6 @@ nav.main-menu.active {
 .about {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(159, 158, 158);
 }
 .about__container {
   display: flex;
@@ -497,7 +493,6 @@ nav.main-menu.active {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(175, 234, 207);
 }
 .footer__container {
   display: flex;

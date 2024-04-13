@@ -62,7 +62,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: calc(100% - 1rem);
-  background-color: lightcoral;
+  // background-color: lightcoral;
   display: block;
   font-family: v.$font-primary;
   // cursor: url("") pointer; JAK DAĆ DUŻY CUSTOMOWY KURSOR?
@@ -156,7 +156,7 @@ nav.main-menu.active {
 
 .main-menu__link {
   color: v.$magnolia;
-  padding: 1.25rem;
+  padding: 1.25rem 3.5rem;
   font-size: 3.5rem;
   line-height: 105%;
 }
@@ -164,7 +164,7 @@ nav.main-menu.active {
 .main-menu__link--fcb {
   color: v.$magnolia;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 1.25rem 3.5rem;
 }
 // położenie facebooka do negocjacji
 
@@ -172,7 +172,7 @@ nav.main-menu.active {
   background-image: url("/img/section_hero.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: pink;
+  // background-color: pink;
   height: 45.5rem;
   width: 90rem;
 
@@ -242,7 +242,7 @@ nav.main-menu.active {
 .receiver {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(188, 230, 173);
+  // background-color: rgb(188, 230, 173);
 
   &__container {
     display: flex;
@@ -266,7 +266,7 @@ nav.main-menu.active {
     font-weight: 500;
   }
   &__container__text {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     align-items: flex-start;
     padding-bottom: 4.25rem;
     line-height: 130%;
@@ -287,7 +287,7 @@ nav.main-menu.active {
 .about {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(159, 158, 158);
+  // background-color: rgb(159, 158, 158);
 
   &__container {
     display: flex;
@@ -383,7 +383,7 @@ nav.main-menu.active {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(175, 234, 207);
+  // background-color: rgb(175, 234, 207);
 
   &__container {
     display: flex;
