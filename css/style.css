@@ -196,7 +196,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: calc(100% - 1rem);
-  background-color: lightcoral;
   display: block;
   font-family: Poppins;
 }
@@ -254,8 +253,7 @@ body {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
-.main-menu__link1,
-.main-menu__link2 {
+.main-menu__link {
   text-decoration: none;
 }
 
@@ -276,7 +274,9 @@ nav.main-menu.active {
 
 .main-menu {
   position: fixed;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   background: rgb(68, 103, 169);
   top: 8rem;
   left: 0;
@@ -286,43 +286,26 @@ nav.main-menu.active {
   transform-origin: left;
   transition: 0.3s ease;
   padding: 6rem 0;
+  height: 100%;
 }
 
-.main-menu__link1,
-.main-menu__link2,
-.main-menu__link3 {
+.main-menu__link {
   color: rgb(249, 248, 243);
-  padding: 1.25rem;
-  font-size: 2.5rem;
+  padding: 1.25rem 3.5rem;
+  font-size: 3.5rem;
+  line-height: 105%;
 }
 
-.main-menu__link1 {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 5rem;
-}
-
-.main-menu__link2 {
-  display: block;
-  transform: rotate(-11deg);
-}
-
-.main-menu__link3 {
-  font-size: 2rem;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.main-menu__img {
-  width: 19rem;
-  margin-top: -15rem;
+.main-menu__link--fcb {
+  color: rgb(249, 248, 243);
+  font-size: 1.5rem;
+  padding: 1.25rem 3.5rem;
 }
 
 .main {
-  background-image: url("/img/Section_hero1.png");
+  background-image: url("/img/section_hero.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: pink;
   height: 45.5rem;
   width: 90rem;
 }
@@ -331,7 +314,7 @@ nav.main-menu.active {
   padding-left: 42.5rem;
 }
 .main__container__btn {
-  margin: -10rem 0 0 65rem;
+  margin: -10rem 0 -3rem 48.5rem;
 }
 .main__container__btn:hover {
   rotate: 180deg;
@@ -376,7 +359,6 @@ nav.main-menu.active {
 .receiver {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(188, 230, 173);
 }
 .receiver__container {
   display: flex;
@@ -399,7 +381,7 @@ nav.main-menu.active {
   font-weight: 500;
 }
 .receiver__container__text {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   align-items: flex-start;
   padding-bottom: 4.25rem;
   line-height: 130%;
@@ -420,7 +402,6 @@ nav.main-menu.active {
 .about {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(159, 158, 158);
 }
 .about__container {
   display: flex;
@@ -512,7 +493,6 @@ nav.main-menu.active {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(175, 234, 207);
 }
 .footer__container {
   display: flex;
