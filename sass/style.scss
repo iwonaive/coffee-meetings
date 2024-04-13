@@ -162,14 +162,14 @@ nav.main-menu.active {
 }
 
 .main-menu__link--fcb {
-color: v.$magnolia;
-font-size: 1.5rem;
-padding: 1rem;
+  color: v.$magnolia;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 // położenie facebooka do negocjacji
 
 .main {
-  background-image: url("/img/Section_hero1.png");
+  background-image: url("/img/section_hero.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: pink;
@@ -184,7 +184,7 @@ padding: 1rem;
   }
 
   &__container__btn {
-    margin: -10rem 0 0 65rem;
+    margin: -10rem 0 -3rem 48.5rem;
   }
   &__container__btn:hover {
     rotate: 180deg;
@@ -236,7 +236,6 @@ padding: 1rem;
 //   background-position: center;
 //   background-repeat: no-repeat;
 //   background-size: contain;
-
 
 // }
 
