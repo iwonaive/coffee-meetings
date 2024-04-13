@@ -254,8 +254,7 @@ body {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
-.main-menu__link1,
-.main-menu__link2 {
+.main-menu__link {
   text-decoration: none;
 }
 
@@ -276,7 +275,9 @@ nav.main-menu.active {
 
 .main-menu {
   position: fixed;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   background: rgb(68, 103, 169);
   top: 8rem;
   left: 0;
@@ -286,35 +287,20 @@ nav.main-menu.active {
   transform-origin: left;
   transition: 0.3s ease;
   padding: 6rem 0;
+  height: 100%;
 }
 
-.main-menu__link1,
-.main-menu__link2,
-.main-menu__link3 {
+.main-menu__link {
   color: rgb(249, 248, 243);
   padding: 1.25rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  line-height: 105%;
 }
 
-.main-menu__link1 {
-  width: 13%;
-  margin-left: 5rem;
-}
-
-.main-menu__link2 {
-  display: block;
-  transform: rotate(-11deg);
-}
-
-.main-menu__link3 {
-  font-size: 2rem;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.main-menu__img {
-  width: 13rem;
-  margin-left: 5rem;
+.main-menu__link--fcb {
+  color: rgb(249, 248, 243);
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .main {
@@ -370,15 +356,6 @@ nav.main-menu.active {
 }
 .details__container__link {
   padding-top: 0.5rem;
-}
-
-.parallax {
-  background-image: url("../img/collage1.png");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .receiver {

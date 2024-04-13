@@ -65,6 +65,7 @@ body {
   background-color: lightcoral;
   display: block;
   font-family: v.$font-primary;
+  // cursor: url("") pointer; JAK DAĆ DUŻY CUSTOMOWY KURSOR?
 }
 
 .nav {
@@ -118,8 +119,7 @@ body {
 
 // style dla menu
 
-.main-menu__link1,
-.main-menu__link2 {
+.main-menu__link {
   text-decoration: none;
 }
 
@@ -130,7 +130,6 @@ body {
 
 nav.main-menu.active {
   width: 100%;
-  // height: 100%;
   transform: scaleX(1);
   transition: all 0.3s ease;
 }
@@ -140,7 +139,9 @@ nav.main-menu.active {
 }
 .main-menu {
   position: fixed;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   background: v.$blue;
   top: 8rem;
   left: 0;
@@ -150,61 +151,22 @@ nav.main-menu.active {
   transform-origin: left;
   transition: 0.3s ease;
   padding: 6rem 0;
+  height: 100%;
 }
 
-.main-menu__link1,
-.main-menu__link2,
-.main-menu__link3 {
-  // display: flex;
+.main-menu__link {
   color: v.$magnolia;
   padding: 1.25rem;
-  font-size: 2.5rem;
-  // width: 30%;
+  font-size: 3.5rem;
+  line-height: 105%;
 }
 
-.main-menu__link1 {
-  // display: flex;
-  width: 13%;
-  margin-left: 5rem;
-  // justify-content: flex-end;
-  // padding-right: 5rem;
-  // flex-direction: column;
-  // align-items: flex-start;
-  // justify-content: flex-end;
-  // transform: rotate(10deg);
-  // margin-left: 35rem;
-  // margin-top: 5rem;
+.main-menu__link--fcb {
+color: v.$magnolia;
+font-size: 1.5rem;
+padding: 1rem;
 }
-.main-menu__link2 {
-  display: block;
-  transform: rotate(-11deg);
-  // margin-left: 60rem;
-  // padding-top: -50rem;
-  // margin-top: -12rem;
-  // margin-top: -10rem;
-  // padding-bottom: -30rem;
-  // margin-bottom: -30rem;
-}
-
-.main-menu__link3 {
-  // margin-top: 15rem;
-  font-size: 2rem;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.main-menu__img {
-  width: 13rem;
-  margin-left: 5rem;
-  // height: 23rem;
-  // margin-top: -15rem;
-  // position: relative;
-  // margin-top: -2rem;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-image: url("/img/vector.png");
-}
+// położenie facebooka do negocjacji
 
 .main {
   background-image: url("/img/Section_hero1.png");
@@ -267,16 +229,16 @@ nav.main-menu.active {
   }
 }
 
-.parallax {
-  background-image: url('../img/collage1.png');
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+// .parallax {
+//   background-image: url('../img/collage1.png');
+//   min-height: 500px;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
 
 
-}
+// }
 
 .receiver {
   display: flex;
