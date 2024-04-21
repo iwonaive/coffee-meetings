@@ -295,6 +295,17 @@ nav.main-menu.active {
   padding: 1.25rem 3.5rem;
   font-size: 3.5rem;
   line-height: 105%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-out;
+  background-image: linear-gradient(to bottom, rgb(163, 163, 163) 45%, rgb(249, 248, 243) 55%);
+  background-size: 100% 220%;
+  background-position: 50% 100%;
+}
+.main-menu__link:hover {
+  background-position: 50% 0%;
 }
 
 .main-menu__link--fcb {

@@ -160,7 +160,21 @@ nav.main-menu.active {
   padding: 1.25rem 3.5rem;
   font-size: 3.5rem;
   line-height: 105%;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-out;
+
+  background-image: linear-gradient(to bottom, v.$gray 45%, v.$magnolia 55%);
+  background-size: 100% 220%;
+  background-position: 50% 100%;
+  &:hover {
+    background-position: 50% 0%;
 }
+}
+// czekam na akcptacje takiego stanu rzeczy 
 
 .main-menu__link--fcb {
   color: v.$magnolia;
