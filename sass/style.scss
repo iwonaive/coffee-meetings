@@ -172,9 +172,9 @@ nav.main-menu.active {
   background-position: 50% 100%;
   &:hover {
     background-position: 50% 0%;
+  }
 }
-}
-// czekam na akcptacje takiego stanu rzeczy 
+// czekam na akcptacje takiego stanu rzeczy, dodałam prostą animację na hover
 
 .main-menu__link--fcb {
   color: v.$magnolia;
@@ -243,16 +243,6 @@ nav.main-menu.active {
     padding-top: 0.5rem;
   }
 }
-
-// .parallax {
-//   background-image: url('../img/collage1.png');
-//   min-height: 500px;
-//   background-attachment: fixed;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: contain;
-
-// }
 
 .receiver {
   display: flex;
@@ -364,7 +354,7 @@ nav.main-menu.active {
       background-repeat: no-repeat;
       padding-top: 5.5rem;
     }
-    // zagnieżdzenie na wzór jest tutaj :)
+    // zagnieżdzenie na wzór jest tutaj :) IMPORTANT TO CHANGE AND LEARN
   }
   // tutaj pewnie ostro nakombinowałam z tym gifem, coś działa ale nie tak jakbym chciała
   &__container__info {
