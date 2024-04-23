@@ -160,6 +160,7 @@ nav.main-menu.active {
   padding: 1.25rem 3.5rem;
   font-size: 3.5rem;
   line-height: 105%;
+  letter-spacing: -1.74px;
 
   color: transparent;
   -webkit-background-clip: text;
@@ -181,7 +182,6 @@ nav.main-menu.active {
   font-size: 1.5rem;
   padding: 1.25rem 3.5rem;
 }
-// położenie facebooka do negocjacji
 
 .main {
   background-image: url("/img/section_hero.png");
@@ -223,6 +223,7 @@ nav.main-menu.active {
   &__container__info {
     align-items: flex-start;
     padding: 10rem 3rem 0 3rem;
+    
   }
   &__container__heading {
     font-size: 3.75rem;
@@ -238,10 +239,15 @@ nav.main-menu.active {
     font-size: 1.5rem;
     line-height: 130%;
     padding-bottom: 2rem;
+    
   }
   &__container__link {
     padding-top: 0.5rem;
   }
+
+  a:visited {
+  color: inherit;
+};
 }
 
 .receiver {
