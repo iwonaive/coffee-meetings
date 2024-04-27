@@ -129,10 +129,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: calc(100% - 1rem);
-  // background-color: lightcoral;
   display: block;
   font-family: v.$font-primary;
-  // cursor: url("") pointer; JAK DAĆ DUŻY CUSTOMOWY KURSOR?
 }
 
 .nav {
@@ -167,7 +165,6 @@ body {
   cursor: pointer;
   margin-top: 2rem;
   margin-right: 2rem;
-  // tutaj zmiana polozenia burger ikonki
 }
 .burger__line {
   width: 2.25rem;
@@ -264,7 +261,6 @@ nav.main-menu.active {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
-// czekam na akcptacje takiego stanu rzeczy, dodałam prostą animację na hover
 
 .main-menu__link--fcb {
   color: v.$magnolia;
@@ -283,8 +279,6 @@ nav.main-menu.active {
   &__container__gif {
     padding-top: 30.5rem;
     padding-left: 42.5rem;
-    // może dać tutaj kompromis i zostawić kubek kawy cały czas ruszający się?
-    // i może tak samo dać z okiem?
   }
 
   &__container__btn {
@@ -340,7 +334,6 @@ nav.main-menu.active {
 .receiver {
   display: flex;
   flex-wrap: wrap;
-  // background-color: rgb(188, 230, 173);
 
   &__container {
     display: flex;
@@ -385,7 +378,6 @@ nav.main-menu.active {
 .about {
   display: flex;
   flex-wrap: wrap;
-  // background-color: rgb(159, 158, 158);
 
   &__container {
     display: flex;
@@ -449,7 +441,7 @@ nav.main-menu.active {
     }
     // zagnieżdzenie na wzór jest tutaj :) IMPORTANT TO CHANGE AND LEARN
   }
-  // tutaj pewnie ostro nakombinowałam z tym gifem, coś działa ale nie tak jakbym chciała
+
   &__container__info {
     width: 34.25rem;
     padding: 2.5rem 2.5rem 0px 2.5rem;
@@ -481,7 +473,6 @@ nav.main-menu.active {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  // background-color: rgb(175, 234, 207);
 
   &__container {
     display: flex;
