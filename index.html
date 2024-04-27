@@ -14,31 +14,52 @@
       <!-- jak widać jest jeden ekran, powinno to inaczej wieżdzać ale to nic, nie wiem jak zrobić kolejny wjeżdzający ekran - to wzięłam z codepena -->
     </div>
 
-    <nav class="nav-logo">
-      <img src="img/logo.png" alt="words coffee and tea" class="logo" />
-    </nav>
-    <!-- mogę tak zostawić, że w jednym nav jest tylko logo a drugim w poniższym burger menu? Czy to lepiej połączyć? -->
+    <div class="splash2">
+      <h1 class="fade-in"><img src="img/logo-white.png" /></h1>
+    </div>
 
-    <!-- hamburger menu -->
+    <div class="grey-layer"></div>
 
-    <input id="nav-toggle" class="nav-toggle" type="checkbox" />
-    <label class="nav-toggle-label" for="nav-toggle">
-      <span class="burger__line burger__line--one"></span>
-      <span class="burger__line burger__line--two"></span>
-      <span class="burger__line burger__line--tree"></span>
-    </label>
-    <nav class="main-menu">
-      <a class="main-menu__link" href="#details">kiedy i gdzie</a>
-      <a class="main-menu__link" href="#about">o nas</a>
-      <a class="main-menu__link" href="#receiver">dla kogo</a>
-      <a class="main-menu__link" href="#contact">kontakt</a>
-      <a
-        class="main-menu__link--fcb"
-        href="https://www.facebook.com/people/Kawa-Herbata/100089639161866/"
-        target="_blank"
-        >Facebook</a
-      >
-    </nav>
+    <div class="navbar">
+      <nav class="nav-logo">
+        <img src="img/logo.png" alt="words coffee and tea" class="logo" />
+      </nav>
+      <!-- mogę tak zostawić, że w jednym nav jest tylko logo a drugim w poniższym burger menu? Czy to lepiej połączyć? -->
+
+      <!-- hamburger menu -->
+
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+      <label class="nav-toggle-label" for="nav-toggle">
+        <span class="burger__line burger__line--one"></span>
+        <span class="burger__line burger__line--two"></span>
+        <span class="burger__line burger__line--tree"></span>
+      </label>
+      <nav class="main-menu">
+        <button class="close__button"><img src="./img/menu-close.png" alt="zamknij menu"></button>
+        <a class="main-menu__link" href="#details">
+          <span class="main-menu__link--first-text">kiedy i gdzie</span>
+          <span class="main-menu__link--second-text">kiedy i gdzie</span>
+        </a>
+        <a class="main-menu__link" href="#about">
+          <span class="main-menu__link--first-text">o nas</span>
+          <span class="main-menu__link--second-text">o nas</span>
+        </a>
+        <a class="main-menu__link" href="#receiver">
+          <span class="main-menu__link--first-text">dla kogo</span>
+          <span class="main-menu__link--second-text">dla kogo</span>
+        </a>
+        <a class="main-menu__link" href="#contact">
+          <span class="main-menu__link--first-text">kontakt</span>
+          <span class="main-menu__link--second-text">kontakt</span>
+        </a>
+        <a
+          class="main-menu__link--fcb"
+          href="https://www.facebook.com/people/Kawa-Herbata/100089639161866/"
+          target="_blank"
+          >Facebook</a
+        >
+      </nav>
+    </div>
 
     <div class="page">
       <section class="main">

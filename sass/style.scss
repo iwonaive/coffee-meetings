@@ -8,6 +8,36 @@ html {
   position: relative;
 }
 
+.splash2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(38, 118, 81);
+  z-index: 100;
+  color: rgb(249, 248, 243);
+  text-align: center;
+  line-height: 90vh;
+  font-size: 5rem;
+}
+
+.splash2.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(38, 118, 81);
+  z-index: -10;
+  color: rgb(249, 248, 243);
+  text-align: center;
+  line-height: 90vh;
+  font-size: 5rem;
+  transition: all 1s;
+}
+
 .splash {
   position: fixed;
   top: 0;
@@ -57,6 +87,43 @@ body {
   background: v.$magnolia;
 }
 
+@keyframes fade-in-opacity {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 70%;
+  }
+}
+
+@keyframes fade-out-opacity {
+  from {
+    opacity: 70%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+.grey-layer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: grey;
+  z-index: 0;
+  opacity: 0%;
+  animation: fade-out-opacity 1s;
+}
+
+.fade-in-opacity {
+  display: block;
+  opacity: 70%;
+  animation: fade-in-opacity 1s;
+}
+
 .page {
   max-width: 1440px;
   display: flex;
@@ -74,11 +141,17 @@ body {
   position: fixed;
 }
 
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .nav-logo {
   padding-top: 1.25rem;
   margin-left: 10.5rem;
   display: flex;
-  position: fixed;
   align-items: center;
   width: 100%;
 }
@@ -88,13 +161,12 @@ body {
   display: none;
 }
 .nav-toggle-label {
-  position: fixed;
   display: none;
   flex-direction: column;
   height: 2rem;
   cursor: pointer;
-  margin-top: 1.25rem;
-  margin-left: 99rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
   // tutaj zmiana polozenia burger ikonki
 }
 .burger__line {
@@ -117,22 +189,52 @@ body {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
+.main-menu__link span {
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+}
+
+.main-menu__link,
+.main-menu__link--first-text {
+  transition: 1s;
+}
+
+.main-menu__link {
+  margin-right: 3.5rem;
+  text-decoration: none;
+  height: 100px;
+  font: normal normal 300 2em/4em Poppins;
+  overflow: hidden;
+  width: 200px;
+}
+
+.main-menu__link--first-text {
+  margin-top: 0em;
+}
+
+.main-menu__link:hover .main-menu__link--first-text {
+  margin-top: -4em;
+  color: #f77f93;
+}
+
 // style dla menu
 
 .main-menu__link {
   text-decoration: none;
 }
 
-.main-menu__link:active,
-.main-menu__link:hover {
-  color: v.$gray;
+.main-menu__link--second-text:hover {
+  color: #f77f93;
 }
 
 nav.main-menu.active {
-  width: 100%;
-  height: 50%;
+  height: 100%;
+  right: 0;
   transform: scaleX(1);
-  transition: all 0.3s ease;
+  width: 50%;
+  transition: all 1s ease -0.3s;
 }
 
 .nav-toggle-label {
@@ -144,36 +246,23 @@ nav.main-menu.active {
   flex-direction: column;
   align-items: flex-end;
   background: v.$blue;
-  top: 8rem;
-  left: 0;
-  width: 0;
+  right: -100%;
   z-index: 2;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: 0.3s ease;
-  padding: 6rem 0;
-  height: 50%;
+  transform-origin: right;
+  transition: all 1s ease;
+  height: 100%;
+  width: 50%;
+  font-family: "Poppins";
 }
 
-.main-menu__link {
-  color: v.$magnolia;
+.close__button {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
   padding: 1.25rem 3.5rem;
-  font-size: 3.5rem;
-  line-height: 105%;
-  letter-spacing: -1.74px;
-
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-repeat: no-repeat;
-  transition: 0.5s ease-out;
-
-  background-image: linear-gradient(to bottom, v.$gray 45%, v.$magnolia 55%);
-  background-size: 100% 220%;
-  background-position: 50% 100%;
-  &:hover {
-    background-position: 50% 0%;
-  }
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 // czekam na akcptacje takiego stanu rzeczy, dodałam prostą animację na hover
 
@@ -223,7 +312,6 @@ nav.main-menu.active {
   &__container__info {
     align-items: flex-start;
     padding: 10rem 3rem 0 3rem;
-    
   }
   &__container__heading {
     font-size: 3.75rem;
@@ -239,15 +327,14 @@ nav.main-menu.active {
     font-size: 1.5rem;
     line-height: 130%;
     padding-bottom: 2rem;
-    
   }
   &__container__link {
     padding-top: 0.5rem;
   }
 
   a:visited {
-  color: inherit;
-};
+    color: inherit;
+  }
 }
 
 .receiver {
