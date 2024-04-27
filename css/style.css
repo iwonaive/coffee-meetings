@@ -405,7 +405,7 @@ nav.main-menu.active {
 }
 
 .main {
-  background-image: url("/img/section-hero.png");
+  background-image: url("../img/section-hero.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 45.5rem;
