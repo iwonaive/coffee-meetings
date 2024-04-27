@@ -497,7 +497,6 @@ nav.main-menu.active {
   margin: 0 auto;
   display: block;
 }
-
 .btn:hover {
   rotate: 180deg;
   cursor: pointer;
