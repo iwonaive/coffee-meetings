@@ -269,7 +269,7 @@ nav.main-menu.active {
 }
 
 .main {
-  background-image: url("/img/section_hero.png");
+  background-image: url("/img/section-hero.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 45.5rem;
@@ -368,9 +368,9 @@ nav.main-menu.active {
   margin: 0 auto;
   display: block;
   &:hover {
-  rotate: 180deg;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
+    rotate: 180deg;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
   }
 }
 
