@@ -410,18 +410,22 @@ nav.main-menu.active {
   background-position: center;
   height: 100vh;
   width: 95vw;
+  position: relative;
 }
 .main__container__gif {
-  padding-top: 30.5rem;
-  padding-left: 42.5rem;
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -50%);
 }
 .main__container__btn {
-  margin: -10rem 0 -3rem 48.5rem;
+  position: absolute;
+  left: 55%;
+  top: 95%;
+  transform: translate(-50%, -50%);
 }
 .main__container__btn:hover {
-  rotate: 180deg;
   cursor: pointer;
-  transition: 0.5s ease-in-out;
 }
 
 .details {
