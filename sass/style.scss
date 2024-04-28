@@ -275,20 +275,19 @@ nav.main-menu.active {
   height: 100vh;
   width: 95vw;
   position: relative;
-  // tu zmieniłam width na vw i jest ciut responsywne ;) 
+  // tu zmieniłam width na vw i jest ciut responsywne ;)
 
   &__container__gif {
-    position:absolute; 
-	left:50%; 
-	top:85%; 
-	transform:translate(-50%,-50%); 
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
   }
-
   &__container__btn {
-     position:absolute; 
-	left:55%; 
-	top:95%; 
-	transform:translate(-50%,-50%); 
+    position: absolute;
+    left: 55%;
+    top: 95%;
+    transform: translate(-50%, -50%);
   }
   &__container__btn:hover {
     cursor: pointer;
@@ -300,12 +299,10 @@ nav.main-menu.active {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-
   &__container {
     display: flex;
     flex-wrap: wrap;
   }
-
   &__container__img {
     width: 49rem;
   }
@@ -331,7 +328,6 @@ nav.main-menu.active {
   &__container__link {
     padding-top: 0.5rem;
   }
-
   a:visited {
     color: inherit;
   }
@@ -341,13 +337,10 @@ nav.main-menu.active {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-
-
   &__container {
     display: flex;
     flex-wrap: wrap;
   }
-
   &__container__img {
     width: 48.75rem;
     display: flex;
@@ -386,12 +379,10 @@ nav.main-menu.active {
 .about {
   display: flex;
   flex-wrap: wrap;
-
   &__container {
     display: flex;
     flex-wrap: wrap;
   }
-
   &__container__img {
     width: 49rem;
     display: flex;
@@ -411,7 +402,6 @@ nav.main-menu.active {
     color: v.$green;
     font-weight: 500;
   }
-
   &__container__text {
     font-size: 1.5rem;
     align-items: flex-start;
@@ -425,12 +415,10 @@ nav.main-menu.active {
   background: v.$green;
   padding: 6rem 2.5rem;
   height: 30rem;
-
   &__container {
     display: flex;
     flex-wrap: wrap;
   }
-
   &__container__img {
     height: 20.5rem;
     width: 35rem;
@@ -449,7 +437,6 @@ nav.main-menu.active {
     }
     // zagnieżdzenie na wzór jest tutaj :) IMPORTANT TO CHANGE AND LEARN
   }
-
   &__container__info {
     width: 34.25rem;
     padding: 2.5rem 2.5rem 0px 2.5rem;
@@ -477,21 +464,17 @@ nav.main-menu.active {
 .email {
   color: v.$magnolia;
 }
-
 .footer {
   display: flex;
   flex-wrap: wrap;
-
   &__container {
     display: flex;
     flex-wrap: wrap;
   }
-
   &__container__thumbs {
     display: flex;
     flex-wrap: wrap;
   }
-
   &__container__img--cloud {
     height: 23.25rem;
     margin-top: 4rem;
@@ -508,7 +491,6 @@ nav.main-menu.active {
     height: 21.25rem;
     margin-top: 2.5rem;
   }
-
   &__container__img--triangle:hover,
   &__container__img--bbc:hover {
     cursor: pointer;
@@ -521,7 +503,6 @@ nav.main-menu.active {
     rotate: 25deg;
     transition: 0.5s ease-in-out;
   }
-
   &__container__info {
     display: flex;
     padding-bottom: 2rem;
