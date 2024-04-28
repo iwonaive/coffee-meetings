@@ -408,25 +408,30 @@ nav.main-menu.active {
   background-image: url("../img/section-hero.png");
   background-repeat: no-repeat;
   background-position: center;
-  height: 45.5rem;
-  width: 90rem;
+  height: 100vh;
+  width: 95vw;
+  position: relative;
 }
 .main__container__gif {
-  padding-top: 30.5rem;
-  padding-left: 42.5rem;
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -50%);
 }
 .main__container__btn {
-  margin: -10rem 0 -3rem 48.5rem;
+  position: absolute;
+  left: 55%;
+  top: 95%;
+  transform: translate(-50%, -50%);
 }
 .main__container__btn:hover {
-  rotate: 180deg;
   cursor: pointer;
-  transition: 0.5s ease-in-out;
 }
 
 .details {
   display: flex;
   flex-wrap: wrap;
+  height: 100vh;
 }
 .details__container {
   display: flex;
@@ -464,6 +469,7 @@ nav.main-menu.active {
 .receiver {
   display: flex;
   flex-wrap: wrap;
+  height: 100vh;
 }
 .receiver__container {
   display: flex;
