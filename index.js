@@ -32,6 +32,7 @@ closeButton.addEventListener("click", () => {
 greyLayer.addEventListener("click", () => {
   mainMenu.classList.remove("active");
   greyLayer.classList.remove("fade-in-opacity");
+  navToggleLabel.classList.remove("active");
 });
 
 mainMenu.addEventListener("click", (event) => {
